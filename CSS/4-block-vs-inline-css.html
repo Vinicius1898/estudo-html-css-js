@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="4.1-block-vs-inline-css.css" />
+</head>
+<body>
+  <div>Div</div>
+  <p>Parágrafo</p>
+  Texto solto induz a criação de um inline box implícito
+  <span>span 1</span> <span>span 2</span> <span>span 3</span>
+  <span>span 4</span> <a href="#">link 1</a>
+  <p>Parágrafo</p>
+
+  <div class="destaque">
+    Block box respeita width, height, border, padding e margin.
+  </div>
+  Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+  <div class="destaque" style="box-sizing: border-box;">
+  Com <code>box-sizing: border-box</code> width e height consideram borda e 
+  padding.
+  </div>
+  <div class="destaque">
+    Margens verticais adjacentes se sobrepõem (margin collapse).
+  </div>
+  Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+  Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+  <span class="destaque">Inline box ignora tamanho</span>
+  Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+  Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+  Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+</body>
