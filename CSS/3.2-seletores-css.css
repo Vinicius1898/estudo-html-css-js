@@ -1,0 +1,70 @@
+html {
+  font-size: 18px;
+  font-family: Arial;
+}
+
+ul.listaBonita > li {
+  list-style: none;
+  border-width: 2px;
+  border-color: #a0a0a0;
+  padding: 4px 8px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+/*
+list-style define o estilo da lista, nesse caso none
+denomina nenhum estilo específico;
+border-width define a largura da borda;
+border-color define a cor da borda;
+padding define o espaçamento entre o texto e a borda,
+sendo o primeiro número o espaçamento vertical, e o 
+segundo número o espaçamento horizontal;
+border-left-style adiciona a borda do lado esquerdo
+dos itens das listas;
+border-right-style adiciona a borda do lado direito
+dos itens das listas.
+*/
+
+ul.listaBonita {
+  color: #353535;
+}
+/*Define a cor dos elementos da classe listaBonita*/
+
+ul.listaBonita > li:first-child {
+  border-top-style: solid;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/*Adiciona borda superior para o primeiro elemento 
+da lista (first-child), e define uma borda superior 
+arredondada com raio de 3px*/
+
+ul.listaBonita > li:last-child {
+  border-bottom-style: solid;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/*Adiciona borda inferior para o último elemento da 
+lista (last-child), e define uma borda inferior 
+arredondada com raio de 3px*/
+
+ul.listaBonita > li:hover {
+  background-color: #ebebeb;
+}
+/*Adiciona cor de fundo diferente para itens sobre
+os quais o cursor do mouse está posicionado*/
+
+ul.listaBonita > li.selecionado {
+  background-color: #bfdbff;
+  border-color: #2e79db;
+  border-bottom-style: solid;
+}
+/*Adiciona cor de fundo e de borda diferente para
+itens da classe .selecionado*/
+
+ul.listaBonita > li:not(.selecionado) + li {
+  border-top-style: solid;
+}
+/*Adiciona borda com formatação em itens 
+não selecionados :not(.selecionado) precedidos 
+por outro item (li) */
